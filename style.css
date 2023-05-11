@@ -852,6 +852,14 @@ border-radius: 14px;
   width: 100%;
   margin-top: 20px;
 }
+.modal-dialog
+{
+  width: 100%;
+  padding: 0 30%;
+}
+.createacc, .othersignin{
+  visibility: hidden
+}
 }
 
 @media only screen and (max-width: 978px) {
@@ -883,7 +891,6 @@ border-radius: 14px;
     bottom: 2rem;
   }
   .headbanner {
-    color: red;
     font-size: 28px;
     line-height: 36px;
   }
@@ -981,6 +988,11 @@ border-radius: 14px;
 
   }
 
+  .loginleft{
+    display: block;
+    width: 100%;
+  }
+
   .filter{
     margin-right: 10rem;
   }
@@ -1014,7 +1026,6 @@ border-radius: 14px;
     text-align: center;
   }
   .headbanner {
-    color: green;
     text-align: center;
     font-size: 24px;
     line-height: 30px;
