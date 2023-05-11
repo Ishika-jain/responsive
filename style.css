@@ -1,0 +1,1059 @@
+* {
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+/* navbar css starts */
+
+.navbar {
+  height: 40%;
+  width: 100vw;
+}
+
+
+.searchland {
+  position: absolute;
+  width: 360px;
+  height: 42px;
+  left: 540px;
+  top: 16px;
+  display: flex;
+  /* background: #000; */
+  background: #f2f2f2;
+  border-radius: 21px;
+}
+
+.searchtextland {
+  position: absolute;
+  justify-content: center;
+  width: 270px;
+  height: 19px;
+  top: 0px;
+  left: 28px;
+  /* top: 28px; */
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  color: #5c5c5c;
+}
+
+.searchiconland {
+  position: absolute;
+  top: 0px;
+  left: 14px;
+  width: 22px;
+  height: 22px;
+}
+
+.createaccland {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  font-weight: 500;
+}
+
+/* navbar css ends */
+
+
+/* bg img css starts */
+
+.bgbox {
+  position: relative;
+  overflow: hidden;
+  height: 440px;
+}
+#bgland {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.overcast {
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.45) -70.91%,
+    rgba(0, 0, 0, 0.6) 29.09%
+  );
+}
+
+.abovebanner {
+  color: white;
+  position: absolute;
+  z-index: 10;
+  left: 14.6rem;
+  bottom: 6rem;
+}
+
+.headbanner {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 47px;
+}
+
+.textbanner {
+  position: absolute;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+/* bg img css ends */
+
+
+.divider {
+  display: flex;
+  justify-content: space-around;
+  color: #8a8a8a;
+  width: 100%;
+}
+
+.options {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+}
+
+.choicelist {
+  height: 36px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+
+
+.line {
+  position: absolute;
+  width: 1050px;
+  height: 0px;
+  left: 260px;
+  top: 640px;
+  border: 1px solid #e0e0e0;
+}
+
+.sline {
+  position: absolute;
+  width: 6rem;
+  height: 0px;
+  left: 260px;
+  top: 640px;
+  border: 1px solid black;
+}
+
+
+.selected {
+  font-weight: 400;
+  color: #000;
+}
+
+.part1{
+  margin-left: 15rem;
+  width: 70%;
+
+}
+
+.blogs {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.blogpost {
+  width: 760px;
+  height: 472px;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.blogpost2 {
+  width: 760px;
+  height: 272px;
+  position: relative;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.blogimg {
+  /* width: 760px;
+  height: 220px; */
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.blogimg:empty {
+  height: 0;
+}
+
+.embedblogimg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 760 / 220; /* replace with your image's original aspect ratio */
+
+}
+
+.blogcontent {
+  position: absolute;
+  top: 238px;
+  height: 252px;
+}
+.blogcontent2 {
+  position: absolute;
+  top: 1rem;
+  height: 252px;
+}
+
+.blogtype {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 23px;
+
+  color: #000000;
+}
+
+.blogheading {
+  display: flex;
+  margin-top: 12px;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 134.17%;
+  color: #000000;
+}
+
+.blogtext {
+  width: 550px;
+}
+
+.moreicon {
+  width: 25px;
+  height: 25px;
+  margin-left: 120px;
+}
+.blogparagraph {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 134.17%;
+  color: #5c5c5c;
+}
+
+.blogauthor {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.authorinfo {
+  display: flex;
+  align-items: center;
+}
+
+.authorimg {
+  width: 48px;
+  border-radius: 24px;
+}
+
+.authorname {
+  margin-left: 0.5rem;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 23px;
+  /* identical to box height */
+
+  color: #000000;
+}
+
+.insights {
+  display: flex;
+  text-align: center;
+}
+
+.blogviews {
+  width: px;
+  height: 18px;
+  margin-right: 40px;
+}
+
+.eyeicon {
+  margin-right: 8px;
+}
+
+.blogshare {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 36px;
+
+  background: #edeef0;
+  border-radius: 2px;
+}
+
+.blogdetails {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.visit {
+  color: #e56135;
+  font-weight: 600;
+}
+
+.calicon,
+.geoicon {
+  margin-right: 0.6rem;
+}
+
+.mainpage {
+  display: flex;
+  flex-direction: row;
+  gap: 0px;
+}
+
+
+
+.part2 {
+  margin-top: 3rem;
+  margin-right: 15rem;
+  width: 30%;
+}
+
+.custom-modal-dialog {
+  width: 100px;
+}
+
+.modal-dialog {
+  max-width: 60%;
+}
+
+.loginform {
+  max-width: 30%;
+  background: #f7f8fa;
+}
+
+.signupform{
+  max-width: 100%;
+  background: #f7f8fa;
+
+}
+
+.createacc {
+  border-radius: 20px;
+  width: 320px;
+  height: 40px;
+}
+
+.smlogo {
+  background: #000;
+  width: 390px;
+  /* background: #FFFFFF; */
+  border: 0.6px solid #d9d9db;
+  border-radius: 2px;
+}
+
+.loginimg{
+  width: 99%;
+}
+
+.logincond{
+  font-size: 11px;
+line-height: 16px;
+/* identical to box height, or 145% */
+
+text-align: right;
+letter-spacing: -0.008em;
+
+color: #000000;
+
+opacity: 0.6;
+}
+
+
+.loggedimg{
+  height: 30px;
+}
+
+.follow{
+  background: #EDEEF0;
+border-radius: 14px;
+}
+
+.personpic{
+  width: 36px;
+  height: 36px;
+}
+
+
+@media (max-width: 1000px) {
+
+  body{
+    overflow-x: hidden;
+  }
+
+  .navbar {
+    height: 72px;
+    width: 100vw;
+  }
+  
+  .bgbox {
+    position: relative;
+    overflow: hidden;
+    height: 440px;
+  }
+  #bgland {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .searchland {
+    position: absolute;
+    width: 360px;
+    height: 42px;
+    left: 540px;
+    top: 16px;
+    display: flex;
+    /* background: #000; */
+    background: #f2f2f2;
+    border-radius: 21px;
+  }
+  
+  .searchtextland {
+    position: absolute;
+    justify-content: center;
+    width: 270px;
+    height: 19px;
+    top: 0px;
+    left: 28px;
+    /* top: 28px; */
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 18px;
+    color: #5c5c5c;
+  }
+  
+  .searchiconland {
+    position: absolute;
+    top: 0px;
+    left: 14px;
+    width: 22px;
+    height: 22px;
+  }
+  
+  .createaccland {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-weight: 500;
+  }
+  
+  .overcast {
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.45) -70.91%,
+      rgba(0, 0, 0, 0.6) 29.09%
+    );
+  }
+  
+  .abovebanner {
+    color: white;
+    position: absolute;
+    z-index: 10;
+    left: 14.6rem;
+    bottom: 6rem;
+  }
+  
+  .headbanner {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+  }
+  
+  .textbanner {
+    position: absolute;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+  }
+  
+  
+  
+ 
+  
+  .optionslist {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+  }
+  
+  .choicelist {
+    height: 36px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  
+  
+  .line {
+    position: absolute;
+    width: 1050px;
+    height: 0px;
+    left: 260px;
+    top: 640px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .sline {
+    position: absolute;
+    width: 6rem;
+    height: 0px;
+    left: 260px;
+    top: 640px;
+    border: 1px solid black;
+  }
+  
+  
+  .selected {
+    font-weight: 400;
+    color: #000;
+  }
+  
+  
+  .blogs {
+    margin-top: 2rem;
+    width: 100%;
+  }
+  
+  .blogpost {
+    width: 760px;
+    height: 472px;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  .blogpost2 {
+    width: 760px;
+    height: 272px;
+    position: relative;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+  }
+  
+  .blogimg {
+    width: 760px;
+    height: 220px;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .blogimg:empty {
+    height: 0;
+  }
+  
+  .embedblogimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .blogcontent {
+    position: absolute;
+    top: 238px;
+    height: 252px;
+  }
+  .blogcontent2 {
+    position: absolute;
+    top: 1rem;
+    height: 252px;
+  }
+  
+  .blogtype {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+  
+    color: #000000;
+  }
+  
+  .blogheading {
+    display: flex;
+    margin-top: 12px;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 134.17%;
+    color: #000000;
+  }
+  
+  .blogtext {
+    width: 550px;
+  }
+  
+  .moreicon {
+    width: 25px;
+    height: 25px;
+    margin-left: 120px;
+  }
+  .blogparagraph {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 19px;
+    line-height: 134.17%;
+    color: #5c5c5c;
+  }
+  
+  .blogauthor {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .authorinfo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .authorimg {
+    width: 48px;
+    border-radius: 24px;
+  }
+  
+  .authorname {
+    margin-left: 0.5rem;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    /* identical to box height */
+  
+    color: #000000;
+  }
+  
+  .insights {
+    display: flex;
+    text-align: center;
+  }
+  
+  .blogviews {
+    width: px;
+    height: 18px;
+    margin-right: 40px;
+  }
+  
+  .eyeicon {
+    margin-right: 8px;
+  }
+  
+  .blogshare {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 42px;
+    height: 36px;
+  
+    background: #edeef0;
+    border-radius: 2px;
+  }
+  
+  .blogdetails {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  
+  .visit {
+    color: #e56135;
+    font-weight: 600;
+  }
+  
+  .calicon,
+  .geoicon {
+    margin-right: 0.6rem;
+  }
+  
+  .mainpage {
+    display: flex;
+    flex-direction: row;
+    gap: 0px;
+  }
+  
+  
+  
+  
+  .part2 {
+    margin-top: 3rem;
+    margin-right: 15rem;
+    width: 30%;
+  }
+  
+  .custom-modal-dialog {
+    width: 100px;
+  }
+  
+  .modal-dialog {
+    max-width: 60%;
+  }
+  
+  .loginform {
+    max-width: 30%;
+    background: #f7f8fa;
+  }
+  
+  .signupform{
+    max-width: 100%;
+    background: #f7f8fa;
+  
+  }
+  
+  .createacc {
+    border-radius: 20px;
+    width: 320px;
+    height: 40px;
+  }
+  
+  .smlogo {
+    background: #000;
+    width: 390px;
+    /* background: #FFFFFF; */
+    border: 0.6px solid #d9d9db;
+    border-radius: 2px;
+  }
+  
+  .loginimg{
+    width: 99%;
+  }
+  
+  .logincond{
+    font-size: 11px;
+  line-height: 16px;
+  /* identical to box height, or 145% */
+  
+  text-align: right;
+  letter-spacing: -0.008em;
+  
+  color: #000000;
+  
+  opacity: 0.6;
+  }
+  
+  
+  .loggedimg{
+    height: 30px;
+  }
+  
+  .follow{
+    background: #EDEEF0;
+  border-radius: 14px;
+  }
+  
+  .personpic{
+    width: 36px;
+    height: 36px;
+  }
+}
+
+
+@media only screen and (max-width: 1200px) {
+
+.part2{
+  visibility: hidden;
+
+}
+
+.part1{
+  margin-left: 10%;
+  width: 100vw;
+}
+  
+.line, .sline{
+  visibility: hidden;
+}
+
+
+.loginright{
+  visibility: hidden;
+}
+.unselected{
+  visibility: hidden;
+}
+
+.modal-dialog {
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+}
+
+.loginform {
+  max-width: 100%;
+}
+
+.loginleft {
+  display: flex;
+  justify-content: center;
+}
+
+.loginhead {
+  flex-direction: column;
+  align-items: center;
+}
+
+.createacc {
+  width: 100%;
+  margin-top: 20px;
+}
+}
+
+@media only screen and (max-width: 978px) {
+
+  
+  .part1{
+    display: flex;
+    align-items: center;
+  }
+    
+
+  
+    
+  }
+
+@media only screen and (max-width: 768px) {
+
+  .part1{
+    margin-left: 2%;
+    width: 20%;
+  }
+
+  .bgbox{
+    height: 340px;
+  }
+  .abovebanner {
+    left: 1rem;
+    right: 1rem;
+    bottom: 2rem;
+  }
+  .headbanner {
+    color: red;
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .textbanner {
+    font-size: 14px;
+    line-height: 18px;
+    margin-left: 13rem;
+  }
+  .part1 {
+    margin-left: 0rem;
+    width: 100%;
+  }
+
+ 
+
+  .blogpost,
+  .blogpost2 {
+    width: 100%;
+    height: 400px;
+  }
+  
+  .blogimg {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    object-fit: cover;
+    padding: 0px;
+  }
+
+  .embedblogimg{
+    object-fit: cover;
+  object-position: center;
+  }
+  .blogcontent,
+  .blogcontent2 {
+    position: relative;
+    top: 9rem;
+    height: auto;
+  }
+
+  .blogheading{
+    margin: 0px;
+  }
+
+  .blogtext {
+    margin: 0px;
+    width: 400px;
+    font-size: 18px;
+  }
+
+  .blogparagraph{
+    font-size: 14px;
+  }
+
+  .blogauthor{
+    font-size: 10px;
+  }
+
+
+  .moreicon {
+    margin-left: 120px;
+  }
+
+  .divider {
+    flex-direction: row;
+    /* align-items: center; */
+    text-align: center;
+  }
+
+  .options {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .options li {
+    margin: 10px 0;
+  }
+
+  .choicelist {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .choicelist button {
+    width: 100%;
+  }
+  .unselected{
+    visibility: hidden;
+  }  
+
+  .selected{
+    font-weight: 800;
+    
+
+  }
+
+  .filter{
+    margin-right: 10rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+  .bgbox{
+    height: 240px;
+  }
+  .abovebanner {
+    text-align: center;
+  }
+  .headbanner {
+    color: green;
+    text-align: center;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .textbanner {
+    margin-left: 7rem;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .part1 {
+    margin-left: 1rem;
+    width: 100%;
+  }
+
+  .blogpost,
+  .blogpost2 {
+    width: 100%;
+    height: auto;
+  }
+
+  .blogimg {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+
+  .blogcontent,
+  .blogcontent2 {
+    position: relative;
+    top: initial;
+    height: auto;
+  }
+
+  .blogtext {
+    width: 100%;
+  }
+
+  .moreicon {
+    margin-left: 0.5rem;
+  }
+}

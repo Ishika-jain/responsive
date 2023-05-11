@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Blog</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="media.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/css/bootstrap.min.css" integrity="sha512-J/7VbG+0lL7zAUK9Xu25HsEC0+nZdqt3IRg/ZF0WALnkL+TGm2Bc44yBxTmR0s1lAmHlA3q3REo8nccB0Evnvw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.1/js/bootstrap.min.js" integrity="sha512-5ueN0oyS5ZlNpbeOGlO/4/o13i4N4y77xSc2zX+Yi6b2m6dRZ6DmU6Rzgb0pvybrb14z3vHQX/U6fUfZ1U+Z6g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-xl navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="logo.png" class="logoland mx-5 my-3" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav d-flex justify-content-around text">
+            <li class="nav-item active">
+              <div class="searchland">
+                <span class="searchiconland"
+                  ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search ml-1 mt-2" viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                  </svg>
+                </span>
+                <span class="searchtextland mt-2 ml-4"> Search for your favourite groups in ATG</span>
+              </div>
+            </li>
+            <li class="nav-item createaccland mr-1 dropdown-toggle" data-bs-toggle="modal" data-bs-target="#loginModal">
+              <img src="p4.png" class="loggedimg" />
+              <span class="text ml-1">Siddharth Goyal</span>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="jumbotron text-center bgbox rounded-0">
+        <div class="container">
+          <img src="./bgland.png" id="bgland" />
+          <div class="overcast"></div>
+          <div class="abovebanner">
+            <h2 class="headbanner">Computer Engineering</h2>
+            <p class="textbanner">142,765 Computer Engineers follow this</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="divider mb-4 mt-5 d-flex bg justify-content-around">
+          <div>
+            <ul class="options d-flex justify-content-between font-weight-normal">
+              <li class="selected">All Posts(32)</li>
+              <li class="unselected">Article</li>
+              <li class="unselected">Event</li>
+              <li class="unselected">Education</li>
+              <li class="unselected">Job</li>
+            </ul>
+          </div>
+          <div class="choicelist d-flex justify-content-between">
+            <div class="dropdown">
+              <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <span class="d-none d-md-inline">Write a Post</span>
+                <span class="d-inline d-md-none">Filter: All</span>
+              </button>
+            </div>
+
+            <button type="button" class="btn btn-light text-transparent border-secondary unselected">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z" />
+                <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z" />
+              </svg>
+
+              Leave a group
+            </button>
+          </div>
+        </div>
+        <div class="line bg-secondary"></div>
+        <div class="sline"></div>
+      </section>
+      <section class="mainpage">
+        <div class="container blogs mt-5 part1 ml-">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="blogpost jumbotron">
+                <div class="blogimg">
+                  <img src="img1.png" class="embedblogimg" />
+                </div>
+                <div class="blogcontent">
+                  <div class="blogtype">✍️ Article</div>
+                  <div class="blogheading mt-3">
+                    <p class="blogtext">What if famous brands had regular fonts? Meet RegulaBrands!</p>
+                    <svg class="moreicon mr-1" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                    </svg>
+                  </div>
+                  <div class="blogparagraph mt-2">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</div>
+                  <div class="blogauthor mt-3">
+                    <div class="authorinfo">
+                      <img class="authorimg" src="p1.png" />
+                      <div class="authorname ml-0.5">Sarthak Kamra</div>
+                    </div>
+                    <div class="insights">
+                      <div class="blogviews mr-4 mt-1">
+                        <svg class="eyeicon mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                        </svg>
+                        1.4k views
+                      </div>
+                      <div class="blogshare">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                          <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blogpost jumbotron">
+                <div class="blogimg">
+                  <img src="img2.png" class="embedblogimg" />
+                </div>
+                <div class="blogcontent">
+                  <div class="blogtype">🔬 Education</div>
+                  <div class="blogheading">
+                    <p class="blogtext">Tax Benefits for Investment under National Pension Scheme launched by Government</p>
+                    <svg class="moreicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                    </svg>
+                  </div>
+                  <div class="blogparagraph">I’ve worked in UX for the better part of a decade. From now on, I plan to rei…</div>
+                  <div class="blogauthor">
+                    <div class="authorinfo">
+                      <img class="authorimg" src="p2.png" />
+                      <div class="authorname">Sarah West</div>
+                    </div>
+                    <div class="insights">
+                      <div class="blogviews">
+                        <svg class="eyeicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                        </svg>
+                        1.4k views
+                      </div>
+                      <div class="blogshare">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                          <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blogpost jumbotron">
+                <div class="blogimg">
+                  <img src="img1.png" class="embedblogimg" />
+                </div>
+                <div class="blogcontent">
+                  <div class="blogtype">🗓️ Meetup</div>
+                  <div class="blogheading">
+                    <p class="blogtext">Finance & Investment Elite Social Mixer @Lujiazui</p>
+                    <svg class="moreicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                    </svg>
+                  </div>
+
+                  <div class="blogdetails">
+                    <div class="d-flex">
+                      <div class="">
+                        <div class="details1 mr-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event calicon mr-1" viewBox="0 0 16 16">
+                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                          </svg>
+                          Fri, 12 Oct, 2018
+                        </div>
+                      </div>
+                      <div class="details2 ml-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt geoicon mr-1" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                        Ahmedabad, India
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <button class="btn btn-transparent border-secondary visit fw-bold w-100">Visit Website</button>
+                    </div>
+                  </div>
+
+                  <div class="blogauthor">
+                    <div class="authorinfo">
+                      <img class="authorimg" src="p3.png" />
+                      <div class="authorname">Ronal Jones</div>
+                    </div>
+                    <div class="insights">
+                      <div class="blogviews">
+                        <svg class="eyeicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                        </svg>
+                        1.4k views
+                      </div>
+                      <div class="blogshare">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                          <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="blogpost2 jumbotron">
+                <div class="blogimg"></div>
+                <div class="blogcontent2">
+                  <div class="blogtype">💼 Job</div>
+                  <div class="blogheading">
+                    <p class="blogtext">Software Developer</p>
+                    <svg class="moreicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                      <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z" />
+                    </svg>
+                  </div>
+
+                  <div class="blogdetails">
+                    <div class="d-flex">
+                      <div class="">
+                        <div class="details1 mr-3">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-calendar-event calicon mr-1" viewBox="0 0 16 16">
+                            <path d="M11 6.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1z" />
+                            <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1z" />
+                          </svg>
+                          Fri, 12 Oct, 2018
+                        </div>
+                      </div>
+                      <div class="details2 ml-3">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt geoicon mr-1" viewBox="0 0 16 16">
+                          <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                          <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                        </svg>
+                        Ahmedabad, India
+                      </div>
+                    </div>
+                    <div class="mt-3">
+                      <button class="btn btn-transparent border-secondary text-success visit fw-bold w-100">Apply on Timesjobs</button>
+                    </div>
+                  </div>
+
+                  <div class="blogauthor">
+                    <div class="authorinfo">
+                      <img class="authorimg" src="p1.png" />
+                      <div class="authorname">Joseph Gray</div>
+                    </div>
+                    <div class="insights">
+                      <div class="blogviews">
+                        <svg class="eyeicon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eye" viewBox="0 0 16 16">
+                          <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8zM1.173 8a13.133 13.133 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.133 13.133 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5c-2.12 0-3.879-1.168-5.168-2.457A13.134 13.134 0 0 1 1.172 8z" />
+                          <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5zM4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0z" />
+                        </svg>
+                        1.4k views
+                      </div>
+                      <div class="blogshare">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-share-fill" viewBox="0 0 16 16">
+                          <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5z" />
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Button trigger modal -->
+
+              <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog custom-modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-body">
+                      <ul class="list-unstyled">
+                        <li>Edit</li>
+                        <li>Report</li>
+                        <li>Option 3</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Modal for login-->
+              <div class="modal m-0 p-0 fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="text-success text-center w-100 m-0 p-0 unselected">Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼</p>
+                    </div>
+                    <div class="modal-body">
+                      <div class="loginhead d-flex justify-content-between">
+                        <h2 class="ml-0 font-weight-bold">Create Account</h2>
+                        <p class="mr-5">
+                          Already have an account?
+                          <span class="text-primary" data-bs-toggle="modal" data-bs-target="#SigninModal">Sign in</span>
+                        </p>
+                      </div>
+                      <div class="loginbody d-flex">
+                        <div class="loginleft">
+                          <div class="container">
+                            <div class="row">
+                              <table class="table table-bordered loginform">
+                                <thead>
+                                  <tr>
+                                    <th>
+                                      <input type="text" class="border-0 bg-transparent" placeholder="First Name" />
+                                    </th>
+                                    <th>
+                                      <input type="text" class="border-0 bg-transparent" placeholder="Last Name" />
+                                    </th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td colspan="2">
+                                      <input class="border-0 bg-transparent" type="email" placeholder="Email" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">
+                                      <input class="border-0 bg-transparent" type="password" placeholder="Password" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">
+                                      <input class="border-0 bg-transparent" type="password" placeholder="Confirm Password" />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                          <button class="btn btn-primary text-light m-2 createacc ml-5">Create Account</button>
+                          <div class="othersignin d-flex flex-column mt-3">
+                            <button class="mt-2 smlogo bg-transparent">
+                              <svg class="text-primary mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                              </svg>
+                              Sign up with Facebook
+                            </button>
+                            <button class="mt-2 smlogo bg-transparent">
+                              <svg class="text-primary mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                              </svg>
+                              Sign up with Google
+                            </button>
+                          </div>
+                        </div>
+                        <div class="loginright">
+                          <img src="loginimg.png" class="ml-5 loginimg" />
+                          <p class="fs-9 lh-16 text-end tracking-tighter logincond">By signing up, you agree to our Terms & conditions, Privacy policy</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--modal for sign in-->
+
+              <div class="modal m-0 p-0 fade" id="SigninModal" tabindex="-1" aria-labelledby="SigninModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <p class="text-success text-center w-100 m-0 p-0 unselected">
+                        
+                        <span class="d-none d-md-inline">                Let's learn, share & inspire each other with our passion for computer engineering. Sign up now 🤘🏼                    </span>
+                    <span class="d-inline d-md-none " style="display: flex; justify-content: end;" >X</span>
+                    </p>
+                    </div>
+                    <div class="modal-body">
+                      <div class="loginhead d-flex justify-content-between">
+                        <h2 class="ml-0 font-weight-bold">Sign In</h2>
+                        <p class="mr-5">
+                          Don’t have an account yet?
+                          <span class="text-primary">Create new for free! </span>
+                        </p>
+                      </div>
+                      <div class="loginbody d-flex">
+                        <div class="loginleft">
+                          <div class="container">
+                            <div class="row">
+                              <table class="table table-bordered signupform">
+                                <tbody>
+                                  <tr>
+                                    <td colspan="2">
+                                      <input class="border-0 bg-transparent" type="email" placeholder="Email" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td colspan="2">
+                                      <input class="border-0 bg-transparent" type="password" placeholder="Password" />
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+
+                          <button class="btn btn-primary text-light m-2 createacc ml-5">
+                            <a href="index2.html" class="text-decoration-none text-light">Sign in</a>
+                          </button>
+                          <div class="othersignin d-flex flex-column mt-3">
+                            <button class="mt-2 smlogo bg-transparent">
+                              <svg class="text-primary mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                                <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                              </svg>
+                              Sign up with Facebook
+                            </button>
+                            <button class="mt-2 smlogo bg-transparent">
+                              <svg class="text-primary mr-2" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-google" viewBox="0 0 16 16">
+                                <path d="M15.545 6.558a9.42 9.42 0 0 1 .139 1.626c0 2.434-.87 4.492-2.384 5.885h.002C11.978 15.292 10.158 16 8 16A8 8 0 1 1 8 0a7.689 7.689 0 0 1 5.352 2.082l-2.284 2.284A4.347 4.347 0 0 0 8 3.166c-2.087 0-3.86 1.408-4.492 3.304a4.792 4.792 0 0 0 0 3.063h.003c.635 1.893 2.405 3.301 4.492 3.301 1.078 0 2.004-.276 2.722-.764h-.003a3.702 3.702 0 0 0 1.599-2.431H8v-3.08h7.545z" />
+                              </svg>
+                              Sign up with Google
+                            </button>
+                            <div class="mt-4 text-center">Forgot Password?</div>
+                          </div>
+                        </div>
+                        <div class="loginright">
+                          <img src="loginimg.png" class="ml-5 loginimg" />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--modal sign in close-->
+            </div>
+          </div>
+        </div>
+
+        <div class="part2 d-flex flex-column">
+          <div class="loc d-flex mt-5 fw-bold justify-content-between w-100">
+            <div class="currloc">
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt geoicon" viewBox="0 0 16 16">
+                  <path d="M12.166 8.94c-.524 1.062-1.234 2.12-1.96 3.07A31.493 31.493 0 0 1 8 14.58a31.481 31.481 0 0 1-2.206-2.57c-.726-.95-1.436-2.008-1.96-3.07C3.304 7.867 3 6.862 3 6a5 5 0 0 1 10 0c0 .862-.305 1.867-.834 2.94zM8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10z" />
+                  <path d="M8 8a2 2 0 1 1 0-4 2 2 0 0 1 0 4zm0 1a3 3 0 1 0 0-6 3 3 0 0 0 0 6z" />
+                </svg>
+                <span text-dark>|</span>
+                Enter your location
+              </p>
+            </div>
+            <div class="editicon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708l-3-3zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207l6.5-6.5zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.499.499 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11l.178-.178z" />
+              </svg>
+            </div>
+          </div>
+
+          <div class="border-top border-secondary my-0 locpref text-secondary">Your location will help us serve better and extend a personalised experience.</div>
+          <!--loggin amele text-->
+          <div>
+            <div class="loggedheader mt-4">
+              <p>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hand-thumbs-up font-weight-bold" viewBox="0 0 16 16">
+                  <path d="M8.864.046C7.908-.193 7.02.53 6.956 1.466c-.072 1.051-.23 2.016-.428 2.59-.125.36-.479 1.013-1.04 1.639-.557.623-1.282 1.178-2.131 1.41C2.685 7.288 2 7.87 2 8.72v4.001c0 .845.682 1.464 1.448 1.545 1.07.114 1.564.415 2.068.723l.048.03c.272.165.578.348.97.484.397.136.861.217 1.466.217h3.5c.937 0 1.599-.477 1.934-1.064a1.86 1.86 0 0 0 .254-.912c0-.152-.023-.312-.077-.464.201-.263.38-.578.488-.901.11-.33.172-.762.004-1.149.069-.13.12-.269.159-.403.077-.27.113-.568.113-.857 0-.288-.036-.585-.113-.856a2.144 2.144 0 0 0-.138-.362 1.9 1.9 0 0 0 .234-1.734c-.206-.592-.682-1.1-1.2-1.272-.847-.282-1.803-.276-2.516-.211a9.84 9.84 0 0 0-.443.05 9.365 9.365 0 0 0-.062-4.509A1.38 1.38 0 0 0 9.125.111L8.864.046zM11.5 14.721H8c-.51 0-.863-.069-1.14-.164-.281-.097-.506-.228-.776-.393l-.04-.024c-.555-.339-1.198-.731-2.49-.868-.333-.036-.554-.29-.554-.55V8.72c0-.254.226-.543.62-.65 1.095-.3 1.977-.996 2.614-1.708.635-.71 1.064-1.475 1.238-1.978.243-.7.407-1.768.482-2.85.025-.362.36-.594.667-.518l.262.066c.16.04.258.143.288.255a8.34 8.34 0 0 1-.145 4.725.5.5 0 0 0 .595.644l.003-.001.014-.003.058-.014a8.908 8.908 0 0 1 1.036-.157c.663-.06 1.457-.054 2.11.164.175.058.45.3.57.65.107.308.087.67-.266 1.022l-.353.353.353.354c.043.043.105.141.154.315.048.167.075.37.075.581 0 .212-.027.414-.075.582-.05.174-.111.272-.154.315l-.353.353.353.354c.047.047.109.177.005.488a2.224 2.224 0 0 1-.505.805l-.353.353.353.354c.006.005.041.05.041.17a.866.866 0 0 1-.121.416c-.165.288-.503.56-1.066.56z" />
+                </svg>
+                Recommended Groups
+              </p>
+            </div>
+            <div class="groups">
+              <div class="person d-flex justify-content-between">
+                <div class="persondetails d-flex mt-4">
+                  <img src="new1.png" class="personpic" />
+                  <p class="ml-3 mt-2">Leisure</p>
+                </div>
+                <div class="personfollow">
+                  <button class="follow border-0 mt-4" onclick="btnclick(this)">Follow</button>
+                </div>
+              </div>
+
+              <div class="person d-flex justify-content-between">
+                <div class="persondetails d-flex mt-4">
+                  <img src="new2.png" class="personpic" />
+                  <p class="ml-3 mt-2">Activism</p>
+                </div>
+                <div class="personfollow">
+                  <button class="follow border-0 mt-4" onclick="btnclick(this)">Follow</button>
+                </div>
+              </div>
+
+              <div class="person d-flex justify-content-between">
+                <div class="persondetails d-flex mt-4">
+                  <img src="new3.png" class="personpic" />
+                  <p class="ml-3 mt-2">MBA</p>
+                </div>
+                <div class="personfollow">
+                  <button class="follow border-0 mt-4" onclick="btnclick(this)">Follow</button>
+                </div>
+              </div>
+
+              <div class="person d-flex justify-content-between">
+                <div class="persondetails d-flex mt-4">
+                  <img src="new4.png" class="personpic" />
+                  <p class="ml-3 mt-2">Philosophy</p>
+                </div>
+                <div class="personfollow">
+                  <button class="follow border-0 mt-4" onclick="btnclick(this)">Follow</button>
+                </div>
+              </div>
+            </div>
+            <div class="text-primary w-100 ml-5 mt-5">see more...</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
